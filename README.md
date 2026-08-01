@@ -128,8 +128,7 @@ Purpose
 
 📸
 
-`images/shared-mailbox.png`
-
+![Shared Mailbox](images/shared-mailbox.png)
 ---
 
 # 🔒 Module 1 — User Offboarding
@@ -168,8 +167,7 @@ Disabled sign-in through Microsoft Entra ID.
 
 📸
 
-`images/disable-user.png`
-
+![Disable User](images/disable-user.png)
 ---
 
 ### Revoke Sessions
@@ -191,8 +189,7 @@ Revoke-MgUserSignInSession
 
 📸
 
-`images/revoke-session.png`
-
+![Revoke Sessions](images/revoke-session.png)
 ---
 
 ### Convert Mailbox
@@ -201,8 +198,7 @@ Converted the user mailbox into a Shared Mailbox.
 
 📸
 
-`images/mailbox-converted.png`
-
+![Mailbox Converted](images/mailbox-converted.png)
 ---
 
 ### Delegate Mailbox Access
@@ -217,8 +213,7 @@ Recovered Microsoft 365 licenses for future assignment.
 
 📸
 
-`images/remove-license.png`
-
+![Remove License](images/remove-license.png)
 ---
 
 ### Remove Security Group Memberships
@@ -272,8 +267,7 @@ Error response came from MDM terms of use page.
 
 📸
 
-`images/mdm-error.png`
-
+![MDM Error](images/mdm-error.png)
 ---
 
 ## Subsequent Error
@@ -294,8 +288,7 @@ failed to authenticate user
 
 📸
 
-`images/invalid-client.png`
-
+![Invalid Cl![Invalid Client](images/invalid-client.png)ient](images/invalid-client.png)
 ---
 
 # Root Cause Analysis
@@ -415,12 +408,10 @@ However,
 
 📸
 
-`images/mdm-scope.png`
-
+![MDM User Scope](images/mdm-scope.png)
 📸
 
-`images/entra-connected.png`
-
+![Entra Connected](images/entra-connected.png)
 ---
 
 # Current Status
