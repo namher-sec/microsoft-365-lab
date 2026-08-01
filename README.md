@@ -108,7 +108,7 @@ Created multiple Microsoft Entra ID users.
 
 📸
 
-`images/users.png`
+images/users.png
 
 ---
 
