@@ -1,22 +1,38 @@
-# 🚀 Microsoft 365 & Entra ID Identity Lifecycle, Governance & MDM Diagnostic Lab
+# 🚀 Microsoft 365 Administration Lab
+
+![Platform](https://img.shields.io/badge/Platform-Microsoft%20365-blue)
+![Identity](https://img.shields.io/badge/Identity-Microsoft%20Entra%20ID-success)
+![Exchange](https://img.shields.io/badge/Exchange-Online-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ## 📌 Executive Summary
 
-This repository documents a hands-on Microsoft 365 administration lab built within the **Capsule Corp** Microsoft 365 tenant (`CapsuleCorp390.onmicrosoft.com`).
+This project demonstrates common Microsoft 365 administration tasks in a test environment. The lab includes Microsoft Entra ID user management, security groups, Exchange Online shared mailboxes, user offboarding, and Microsoft Intune troubleshooting.
 
-The project covers identity lifecycle management, Microsoft Entra ID administration, RBAC implementation, Exchange Online mailbox management, user offboarding, and Microsoft Intune device enrollment troubleshooting.
+---
 
-Although Microsoft Entra ID Join was successfully completed, Microsoft Intune enrollment remained unresolved despite extensive troubleshooting. The issue has been documented as an identified limitation and future improvement area.
+## Project Highlights
+
+- ✅ Created Microsoft Entra ID users and groups
+- ✅ Assigned Microsoft 365 licenses
+- ✅ Managed Exchange Online shared mailboxes
+- ✅ Simulated employee onboarding and offboarding
+- ✅ Joined Windows devices to Microsoft Entra ID
+- ✅ Investigated Microsoft Intune enrollment issues
+- ✅ Produced detailed technical documentation
 
 ---
 
 # 📖 Table of Contents
 
+- [Skills Demonstrated](#skills-demonstrated)
+- [Tasks Performed](#tasks-performed)
 - [Environment Overview](#environment-overview)
+- [Lab Architecture](#lab-architecture)
 - [Tenant Configuration](#tenant-configuration)
 - [Security Groups](#security-groups)
-- [User Management](#user-management)
-- [Shared Mailbox Management](#shared-mailbox-management)
+- [User Administration](#user-administration)
+- [Shared Mailbox](#shared-mailbox)
 - [User Offboarding](#user-offboarding)
 - [Microsoft Intune Troubleshooting](#microsoft-intune-troubleshooting)
 - [Root Cause Analysis](#root-cause-analysis)
@@ -24,13 +40,50 @@ Although Microsoft Entra ID Join was successfully completed, Microsoft Intune en
 - [Current Status](#current-status)
 - [Future Improvements](#future-improvements)
 - [Technologies Used](#technologies-used)
-- [Skills Demonstrated](#skills-demonstrated)
+- [Project Outcome](#project-outcome)
+
 
 ---
 
-# 🏗️ Environment Overview
+# Skills Demonstrated
 
-## Tenant Information
+- Microsoft 365 Administration
+- Microsoft Entra ID
+- Exchange Online
+- Shared Mailboxes
+- User & Identity Management
+- Security Groups
+- License Management
+- User Offboarding
+- Microsoft Intune
+- Device Enrollment
+- Windows Administration
+- Technical Troubleshooting
+- Technical Documentation
+
+---
+
+# Tasks Performed
+
+During this lab, I completed the following Microsoft 365 administration tasks:
+
+- Created and managed Microsoft Entra ID users
+- Created security groups and Microsoft 365 groups
+- Assigned Microsoft 365 licenses
+- Managed user roles and permissions
+- Created and managed Exchange Online shared mailboxes
+- Simulated a complete employee offboarding process
+- Revoked user sessions and disabled accounts
+- Removed licenses and group memberships
+- Joined a Windows device to Microsoft Entra ID
+- Investigated Microsoft Intune device enrollment issues
+- Documented troubleshooting steps and findings
+
+  ---
+
+# Environment Overview
+
+## Tenant Configuration
 
 | Property | Value |
 |----------|-------|
@@ -41,6 +94,22 @@ Although Microsoft Entra ID Join was successfully completed, Microsoft Intune en
 | Endpoint Management | Microsoft Intune |
 | Administrator | Max Mustermann |
 
+---
+
+## Lab Architecture
+
+```text
+                  Microsoft 365 Tenant
+                          │
+        ┌─────────────────┼─────────────────┐
+        │                 │                 │
+        ▼                 ▼                 ▼
+ Microsoft Entra ID   Exchange Online   Microsoft Intune
+        │
+        ▼
+ Windows 10 Enterprise VM
+
+```
 ---
 
 ## 📸 Screenshots
@@ -67,7 +136,7 @@ images/
 
 ---
 
-# 👥 Security Groups
+# Security Groups
 
 Created the following security groups for RBAC and policy targeting.
 
@@ -80,9 +149,10 @@ Created the following security groups for RBAC and policy targeting.
 📸
 
 ![Security Groups](images/security-groups.png)
+
 ---
 
-# 👤 User Administration
+# User Administration
 
 Created multiple Microsoft Entra ID users.
 
@@ -108,9 +178,10 @@ Created multiple Microsoft Entra ID users.
 📸
 
 ![Users](images/users.png)
+
 ---
 
-# 📧 Shared Mailbox
+# Shared Mailbox
 
 Created a departmental shared mailbox.
 
@@ -131,7 +202,7 @@ Purpose
 ![Shared Mailbox](images/shared-mailbox.png)
 ---
 
-# 🔒 Module 1 — User Offboarding
+# User Offboarding
 
 Simulated a secure employee offboarding process.
 
@@ -222,8 +293,7 @@ Removed the user from departmental security groups.
 
 ---
 
-# 🛠 Module 2 — Microsoft Intune Enrollment Troubleshooting
-
+# Microsoft Intune Troubleshooting
 ## Objective
 
 Join a Windows 10 Enterprise virtual machine to Microsoft Entra ID and automatically enroll it into Microsoft Intune.
@@ -288,7 +358,8 @@ failed to authenticate user
 
 📸
 
-![Invalid Cl![Invalid Client](images/invalid-client.png)ient](images/invalid-client.png)
+![Invalid Client](images/invalid-client.png)
+
 ---
 
 # Root Cause Analysis
@@ -412,6 +483,7 @@ However,
 📸
 
 ![Entra Connected](images/entra-connected.png)
+
 ---
 
 # Current Status
@@ -445,7 +517,7 @@ Further investigation is required.
 
 ---
 
-# Future Improvements / Fix Needed
+# Future Improvements
 
 - Successfully enroll Windows devices into Microsoft Intune.
 - Identify the root cause of the `invalid_client` authentication error.
@@ -459,43 +531,30 @@ Further investigation is required.
 
 # Technologies Used
 
-- Microsoft Entra ID
 - Microsoft 365 Admin Center
+- Microsoft Entra ID
 - Microsoft Intune
 - Exchange Online
 - Windows 10 Enterprise
+- Microsoft Graph
 - QEMU/KVM
 - OAuth 2.0
 - OpenID Connect
-- Microsoft Graph
-- Device Registration Service (DRS)
 
 ---
 
-# Skills Demonstrated
-
-- Microsoft Entra ID Administration
-- Microsoft 365 Administration
-- Exchange Online
-- Shared Mailbox Management
-- User Lifecycle Management
-- User Offboarding
-- Security Groups
-- RBAC
-- Session Revocation
-- License Management
-- Microsoft Intune Administration
-- Device Enrollment Troubleshooting
-- Windows Enterprise Administration
-- Root Cause Analysis
-- Technical Documentation
-
----
 
 # Project Outcome
 
-This lab successfully demonstrated enterprise Microsoft 365 administration workflows including identity management, Exchange Online administration, RBAC implementation, and secure employee offboarding.
+This project demonstrates practical Microsoft 365 administration in a test environment.
 
-An attempt was made to integrate Microsoft Intune with Microsoft Entra ID for automatic MDM enrollment. Despite extensive troubleshooting, the device could not be enrolled into Intune. As a temporary workaround, automatic MDM enrollment was disabled, allowing the device to successfully join Microsoft Entra ID.
+The completed tasks include:
 
-The unresolved Microsoft Intune enrollment issue has been documented as a known limitation and future improvement area, reflecting a realistic troubleshooting scenario encountered in enterprise IT environments.
+- Microsoft Entra ID user administration
+- Security group management
+- Exchange Online shared mailbox administration
+- Microsoft 365 license management
+- User offboarding procedures
+- Microsoft Intune enrollment troubleshooting
+
+Although Microsoft Intune enrollment could not be completed, the issue was systematically investigated and documented. Microsoft Entra ID Join was completed successfully, demonstrating a structured troubleshooting approach similar to real-world IT administration.
