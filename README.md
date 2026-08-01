@@ -79,8 +79,7 @@ Created the following security groups for RBAC and policy targeting.
 
 📸
 
-`images/security-groups.png`
-
+![Security Groups](images/security-groups.png)
 ---
 
 # 👤 User Administration
@@ -108,8 +107,7 @@ Created multiple Microsoft Entra ID users.
 
 📸
 
-images/users.png
-
+![Users](images/users.png)
 ---
 
 # 📧 Shared Mailbox
